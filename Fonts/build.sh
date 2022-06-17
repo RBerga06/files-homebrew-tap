@@ -27,6 +27,7 @@ function build {
     font "LOTR"
     # Movies
     font "Ringbearer"
+    font "Aniron"
     # Runes
     font "AngloSaxon Runes"
     font "Dwarf Runes"
