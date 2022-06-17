@@ -12,8 +12,12 @@ function font {
 
 function clean {
     echo "Cleaning"
-    rm -rf "sha256.txt"
-    rm -rf "*.zip"
+    if [ "$1" ]; then
+        rm -rf "$1.zip"
+    else
+        rm -rf "sha256.txt"
+        rm -rf "*.zip"
+    fi
 }
 
 function build {
@@ -21,11 +25,18 @@ function build {
     font "MesloLGS NF"
     ### LOTR ###
     font "LOTR"
+    # Movies
+    font "Ringbearer"
     # Runes
     font "AngloSaxon Runes"
     font "Dwarf Runes"
     font "Germanic Runes"
 }
 
-clean
-build
+if [ "$1" ]; then
+    clean "$1"
+    font "$1"
+else
+    clean
+    build
+fi
