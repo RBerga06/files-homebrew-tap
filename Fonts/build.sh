@@ -21,14 +21,14 @@ function clean {
 }
 
 function build {
-    ### MesloLGS NF ###
+    ### MesloLGS NF ###
     font "MesloLGS NF"
     ### LOTR ###
     font "LOTR"
     # Movies
     font "Ringbearer"
     font "Aniron"
-    # Runes
+    # Runes
     font "AngloSaxon Runes"
     font "Dwarf Runes"
     font "Germanic Runes"
